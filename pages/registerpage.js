@@ -1,8 +1,7 @@
-
 import React, { useState } from "react";
 import { View, Text, Button } from "react-native";
 import styles from "../styles";
-import {TextInput} from 'react-native-web';
+import {TextInput} from 'react-native';
 
 export default function RegisterPage({navigation}){
 const[formData, setFormData]=useState({
@@ -52,9 +51,14 @@ const handleChange =(field, value) => {
                 onChangeText={(text) => handleChange("gender", text)}
             />
 
+
             <View>
-                <Button title="Review and Submit" 
-                onPress={() => navigation.navigate("Review", {formData})}></Button>
+                <Button 
+    title="Review and Submit" 
+    onPress={() => navigation.navigate("Review", {formData})}
+    // Add the color prop here
+    color={"#3054caff"} 
+/>
             </View>
 
          </View>

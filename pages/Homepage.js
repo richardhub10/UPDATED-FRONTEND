@@ -13,7 +13,12 @@ export default function Homepage({navigation}){
             </View>
 
             <View>
-                <Button title="View User" onPress={() => navigation.navigate("UserList")}></Button>
+                <Button 
+    title="View User" 
+    onPress={() => navigation.navigate("UserList")}
+    
+    color={"#3054caff"} 
+/>
             </View>
         </View>
 

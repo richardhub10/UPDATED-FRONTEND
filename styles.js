@@ -21,13 +21,13 @@ const styles = StyleSheet.create({
    
     button: {
         backgroundColor: '#062049ff', 
-        padding: 14,
+        padding: 18,
         width: '20%', 
         color: '#ffffff',
-        borderRadius: 10,
+        borderRadius: 20,
         alignItems: 'center',
-        shadowColor: '#1e40af', 
-        shadowOffset: { width: 0, height: 4 },
+        shadowColor: '#3054caff', 
+        shadowOffset: { width: 0, height: 20 },
         shadowOpacity: 0.3,
         shadowRadius: 5,
         elevation: 4,
@@ -38,9 +38,9 @@ const styles = StyleSheet.create({
 
     viewUserButton: {
         backgroundColor: '#000000ff', 
-        padding: 14,
+        padding: 20,
         width: '10%', 
-        borderRadius: 12,
+        borderRadius: 15,
         alignItems: 'center',
         shadowColor: '#000000ff', 
         shadowOffset: { width: 0, height: 4 },
@@ -52,8 +52,8 @@ const styles = StyleSheet.create({
 
     
     viewUserButtonText: {
-        color: '#ffffff', 
-        fontSize: 16,
+        color: '#000000ff', 
+        fontSize: 14,
         fontWeight: '600',
     },
 
@@ -61,14 +61,14 @@ const styles = StyleSheet.create({
         width: '20%', 
         padding: 14, 
         marginVertical: 12, 
-        borderColor: '#052861ff', 
+        borderColor: '#0e1d31ff', 
         backgroundColor: '#ffffff', 
         borderWidth: 1.5, 
         borderRadius: 12, 
         fontSize: 16,
-        color: '#1f2937', 
+        color: '#000000ff', 
         shadowColor: '#00000033',
-        shadowOffset: { width: 0, height: 2 },
+        shadowOffset: { width: 0, height: 20 },
         shadowOpacity: 0.15,
         shadowRadius: 4,
         elevation: 2,
@@ -87,13 +87,13 @@ const styles = StyleSheet.create({
 
     userCard: {
         backgroundColor: '#ffffff',
-        margin: 8,
-        padding: 16,
-        borderRadius: 12,
+        margin: 90,
+        padding: 40,
+        borderRadius: 60,
         shadowColor: '#000',
         shadowOffset: {
-            width: 0,
-            height: 2,
+            width: 50,
+            height: 30,
         },
         shadowOpacity: 0.25,
         shadowRadius: 3.84,
@@ -103,7 +103,7 @@ const styles = StyleSheet.create({
     },
 
     userInfo: {
-        fontSize: 16,
+        fontSize: 15,
         marginBottom: 6,
         color: '#333',
     },
