@@ -7,18 +7,18 @@ export default function UserListPage({navigation}){
     const [users, setUsers] = useState([]);
 
     useEffect(() => {
-        axios.get("http://192.168.30.227:8000/registration/api/users/")
+        axios.get("http://127.0.0.1:8000/registration/api/users/")
         .then((res) => {
             setUsers(res.data);
         })
-        .catch((err) =>{s
+        .catch((err) =>{
             console.error(err);
         })
     },[]
     );
 
     const handleEdit = (user) => {
-        navigation.navigate("EditUser", { user });
+        navigation.navigate("EditUser", {user});
     };
 
     const handleDelete = (id) => {
@@ -42,7 +42,7 @@ export default function UserListPage({navigation}){
         //         }
         //     )
         // );
-        axios.delete(`http://192.168.30.227:8000/registration/api/users/${id}/`)
+        axios.delete(`http://127.0.0.1:8000/registration/api/users/${id}/`)
     };
 
     return (
@@ -67,10 +67,10 @@ export default function UserListPage({navigation}){
                             {item.email}
                         </Text>
                         <View>
-                            <Button title="Edit" color="#062049ff"
+                            <Button title="Edit" color="#088cf8ff"
                             onPress={() => handleEdit(item)}></Button>
-                            <Button title="Delete"
-                            color="darkred"></Button>
+                            <Button title="Delete" onPress={() => handleDelete(item.id)}
+                            color="red"></Button>
                         </View>
                     </View>
                 )}
